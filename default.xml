@@ -3,14 +3,16 @@
   <remote fetch="ssh://git@118.163.75.37/mx-51-mirror/mx-51/" name="openlinux"/>
   <remote fetch="https://android.googlesource.com" name="aosp" revision="lollipop-mr1-release" review="android-review.googlesource.com"/>  
   <remote fetch="https://github.com/khadas/" name="khadas" revision="Vim"/>
+  <remote fetch="https://github.com/android-crestron/" name="crestron" revision="master"/>
 
   <default remote="aosp" upstream="lollipop-mr1-release" sync-c="true" sync-j="4" sync-tags="false"/>
   
   <project name="android_vendor_amlogic_apps_IrBlaster" remote="khadas" path="vendor/amlogic/apps/IrBlaster" revision="fab61fd332ea3bb4ccba6791a3df0c1d4c1dea31" upstream="Vim"/>
   <!-- project name="amlogic/tools/system_monitor" path="vendor/amlogic/apps/system_monitor" revision="86e029906f97345b3cadc27c3f50f57373850ef2"/ -->
   <project name="android_external_curl" path="external/curl" remote="khadas" revision="667b3388e5ef5aee7130b7caaaffe34c23f37927" upstream="Vim"/>
-  <!-- project name="device/amlogic" path="device/amlogic" revision="c16a5f023ddfd263291dba0f20f58ab1d5bb93d5"/ -->
-  <!-- project name="kernel/common" path="common" revision="75a1004b08303d3c5095fd7529a36822efae999f"/ -->
+  <project name="device_amlogic_common" path="device/amlogic/common" remote="crestron" upstream="master"/>
+  <project name="device_amlogic_yushan_one" path="device/amlogic/yushan_one" remote="crestron" upstream="master"/>
+  <project name="kernel" path="common" remote="crestron" upstream="master"/>
   <project name="platform/external/libusb" path="external/libusb"/>
   <project name="android_hardware_tvin" path="hardware/tvin" remote="khadas" revision="a7a372954af21690210691d368c16233b33e88f8" upstream="Vim"/>
   <project name="platform/abi/cpp" path="abi/cpp" revision="a0f99286d0909f7a30b0bee742bec2a0b62c4dd0"/>
